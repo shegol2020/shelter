@@ -172,3 +172,69 @@ body {
 .carousel-cards{
     padding: 70px 100px;
 }
+
+/* HELP */
+
+.help{
+    padding: 100px 0 100px 0;
+}
+
+.help-title{
+    border: 1px solid green;
+}
+
+.help-list{
+    padding: 70px 0 0 0;
+    display: flex;
+}
+
+.help-list-item{
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+
+
+/* DONATION */
+
+.donation{
+    background-color:#CDCDCD;
+}
+
+.donation-container{
+    padding: 70px 0 100px 0;
+    display: flex;
+}
+
+/* .donation-pic{
+
+} */
+
+.donation-info{
+  padding: 20px 0 0 0;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color:#292929;
+}
+
+.footer-container{
+    padding: 60px 0 60px 0;
+    display: flex;
+}
+
+/* .footer-contact{
+
+} */
+
+.footer-location{
+   padding: 0 0 0 160px;
+}
+
+.footer-pic{
+    padding: 0 0 0 120px;
+}
