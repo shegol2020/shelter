@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Georgia', serif;
-    background-color: #292929;
+        /* background-color: #292929; */
     margin: 0;
     padding: 0;
 }
@@ -184,14 +184,16 @@ body {
 }
 
 .help-list{
-    padding: 70px 0 0 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 .help-list-item{
-    padding: 10px;
-    width: 60px;
-    height: 60px;
+    padding: 65px 65px 0px 0px;
+    width: 150px;
+    height: 113px;
     border: 1px solid green;
 }
 
@@ -225,6 +227,12 @@ body {
 .footer-container{
     padding: 60px 0 60px 0;
     display: flex;
+    min-height: 300px;
+    background-image: url(../../assets/img/footer-puppy.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+
 }
 
 /* .footer-contact{
@@ -232,9 +240,6 @@ body {
 } */
 
 .footer-location{
-   padding: 0 0 0 160px;
+   padding: 0 420px 0 160px;
 }
 
-.footer-pic{
-    padding: 0 0 0 120px;
-}
