@@ -168,9 +168,37 @@ body {
     background-color: #CDCDCD;
   }
 
+.carousel-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
 .carousel-cards{
     padding: 70px 100px;
+}
+
+.arrow{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: 0;
+    /* background-image: url(/img/arrow-left.svg); */
+}
+
+.arrow-right{
+    right: 0;
+    /* background-image: url(/img/arrow-left.svg); */
 }
 
 /* HELP */
