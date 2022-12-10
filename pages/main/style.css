@@ -17,18 +17,66 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, ul, p {
+    margin: 0;
+    padding: 0;
+  }
+
 .container {
     width: 1200px;
     margin: 0 auto;
+  }
+
+.heading-large{ /* header2 */
+    font-size: 44px;
+    line-height: 57px;
+    font-weight: 400;
+
+}
+
+.heading-medium{ /* header3 */
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.heading-small{ /* header4 */
+    font-size: 22px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 1.29px;
+
+}
+
+.heading-extra-small{ /* header5 */
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+
+}
+
+:root {
+    --color-light-xl: #FFFFFF;
+    --color-light-l: #F6F6F6;
+    --color-light-s: #FAFAFA;
+    --color-dark-3xl:#292929;
+    --color-dark-2xl:#444444;
+    --color-dark-xl:#4C4C4C;
+    --color-dark-l:#545454;
+    --color-dark-m:#B2B2B2;
+    --color-dark-s:#CDCDCD;
+    --color-accent:#F1CDB3;
+    --color-accent-light:#FDDCC4;
   }
 
 .btn{
     display: inline-block;
     padding: 15px 45px;
     min-width: 207px;
-    background-color: #F1CDB3;
+    background-color: var(--color-accent);
     /* font-family: inherit; */
-    color: #292929;
+    color: var(--color-dark-3xl);
     text-align: center;
     text-decoration: none;
     border-radius: 100px;
@@ -56,7 +104,7 @@ body {
 }
 
 .header-title-link{
-    color: #F1CDB3;
+    color: var(--color-accent);
     /* font-family: 'Oswald', sans-serif; */
     font-weight: 400;
     font-size: 32px;
@@ -67,7 +115,7 @@ body {
 
 .header-subtitle{
     padding-left: 4px;
-    color: #FFFFFF;;
+    color: var(--color-light-xl);
     font-family: 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -97,11 +145,11 @@ body {
     font-size: 15px;
     line-height: 160%;
     text-decoration: none;
-    color: #CDCDCD;
+    color: var(--color-dark-s);
 }
 
 .header-nav-item-highlight{
-    border-bottom: 3px solid #F1CDB3;
+    border-bottom: 3px solid var(--color-accent);
 }
 
 /* about */
@@ -116,7 +164,7 @@ body {
 }
 
 .about-title {
-    color: #FFFFFF;
+    color: var(--color-light-xl);
     font-size: 44px;
     line-height: 57px;
     width: 70%;
@@ -124,7 +172,7 @@ body {
 
 .about-text {
     font-family: 'Arial', sans-serif;
-    color: #CDCDCD;
+    color: var(--color-dark-s);
     font-size: 15px;
     line-height: 24px;
   }
@@ -157,7 +205,7 @@ body {
 }
 
 .test{
-    color: #FFFFFF;
+    color: var(--color-light-xl);
     border: 1px solid green;
 }
 
@@ -165,7 +213,7 @@ body {
 
 .carousel{
     padding: 80px 0 100px 0;
-    background-color: #CDCDCD;
+    background-color: var(--color-dark-s);
   }
 
 .carousel-wrap{
@@ -230,7 +278,7 @@ body {
 /* DONATION */
 
 .donation{
-    background-color:#CDCDCD;
+    background-color: var(--color-dark-s);
 }
 
 .donation-container{
@@ -249,25 +297,69 @@ body {
 /* FOOTER */
 
 .footer{
-    background-color:#292929;
+    background-color:var(--color-dark-3xl);
+    background-image: url(../../assets/img/footer-puppy.png);
+    background-size: 330px 330px;
+    background-repeat: no-repeat;
+    background-position-x: 1525px;
+    background-position-y: bottom;
 }
 
 .footer-container{
     padding: 60px 0 60px 0;
     display: flex;
-    min-height: 300px;
-    background-image: url(../../assets/img/footer-puppy.png);
+    /* background-image: url(../../assets/img/footer-puppy.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: bottom; */
 
 }
 
-/* .footer-contact{
-
-} */
+.footer-contact-details{
+    padding: 57px 0 0 0;
+}
 
 .footer-location{
-   padding: 0 420px 0 160px;
+   padding: 0 400px 0 170px;
 }
 
+.footer-location-details{
+    padding: 50px 0 0 0;
+}
+
+
+.footer-subtitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-accent);
+}
+
+.footer-subtitle:nth-child(2){
+    padding-top: 50px;
+}
+
+.footer-subtitle::before{
+    padding-right: 20px;
+    content: '';
+    height: 32px;
+    width: 40px;
+    background-size: contain;
+}
+
+.footer-email::before{
+    background-image: url(../../assets/img/icons/icon-email.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-phone::before{
+    background-image: url(../../assets/img/icons/icon-phone.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-location-icon::before{
+    height: 32px;
+    width: 32px;
+    background-image: url(../../assets/img/icons/icon-marker.svg);
+    background-repeat: no-repeat;
+}
