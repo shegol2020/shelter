@@ -10,6 +10,10 @@
     src: url('../../assets/fonts/arial.ttf') format('truetype');
   }
 
+  html{
+    font-size: 62.5%;
+  }
+
 body {
     font-family: 'Georgia', serif;
         /* background-color: #292929; */
@@ -28,30 +32,30 @@ h1, h2, h3, h4, ul, p {
   }
 
 .heading-large{ /* header2 */
-    font-size: 44px;
-    line-height: 57px;
+    font-size: 4.4rem;
+    line-height: 5.7rem;
     font-weight: 400;
 
 }
 
 .heading-medium{ /* header3 */
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 }
 
 .heading-small{ /* header4 */
-    font-size: 22px;
-    line-height: 23px;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
     font-weight: 400;
-    letter-spacing: 1.29px;
+    letter-spacing: 0.129rem;
 
 }
 
 .heading-extra-small{ /* header5 */
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
     font-weight: 400;
 
 }
@@ -81,8 +85,8 @@ h1, h2, h3, h4, ul, p {
     text-decoration: none;
     border-radius: 100px;
     border: none;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
     cursor: pointer;
 }
 
@@ -107,8 +111,8 @@ h1, h2, h3, h4, ul, p {
     color: var(--color-accent);
     /* font-family: 'Oswald', sans-serif; */
     font-weight: 400;
-    font-size: 32px;
-    letter-spacing: 2px;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
     line-height: 110%;
     text-decoration: none;
 }
@@ -118,9 +122,9 @@ h1, h2, h3, h4, ul, p {
     color: var(--color-light-xl);
     font-family: 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .header-nav-list{
@@ -142,7 +146,7 @@ h1, h2, h3, h4, ul, p {
 
 
 .header-nav-item-link{
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 160%;
     text-decoration: none;
     color: var(--color-dark-s);
@@ -165,16 +169,16 @@ h1, h2, h3, h4, ul, p {
 
 .about-title {
     color: var(--color-light-xl);
-    font-size: 44px;
-    line-height: 57px;
+    font-size: 4.4rem;
+    line-height: 5.7rem;
     width: 70%;
   }
 
 .about-text {
     font-family: 'Arial', sans-serif;
     color: var(--color-dark-s);
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
   }
 
 .about-btn{
