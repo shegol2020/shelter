@@ -96,6 +96,7 @@ h1, h2, h3, h4, ul, p {
 .header-wrap{
     display: flex;
     justify-content: space-between;
+    background: url(../../assets/img/background-noise.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .header-title {
@@ -149,6 +150,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .header-nav-item-highlight{
+    color: var(--color-light-s);
     border-bottom: 3px solid var(--color-accent);
 }
 
