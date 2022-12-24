@@ -38,7 +38,7 @@ h1, h2, h3, h4, ul, p {
     font-size: 35px;
     line-height: 45px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 .heading-small{ /* header4 */
@@ -216,20 +216,28 @@ h1, h2, h3, h4, ul, p {
   border: 1px solid red;
 }
 
-.intro-container{
-    display: flex;
-}
-
-.intro-text{
-    padding: 20px 0 30px 60px;
+.intro-info{
+    padding: 14px 175px 14px 595px;
+    width: 33%;
+    background-image: url(../../assets/img/dog&cat.png);
+    /* background-size: 330px 330px; */
+      background-repeat: no-repeat;
+      background-position-x: 148px;
+      background-position-y: -25px;
 }
 
 .intro-photo{
     padding: 0 60px 0 0;
 }
 
+.intro-text{
+    color: var(--color-dark-xl);
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
 .test{
-    color: var(--color-light-xl);
     border: 1px solid green;
 }
 
