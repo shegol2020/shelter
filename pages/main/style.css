@@ -91,7 +91,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .btn-accent{
-    background-color: #fff;
+    background-color: var(--color-light-xl);
 }
 
 
@@ -251,7 +251,7 @@ h1, h2, h3, h4, ul, p {
 
 .carousel{
     padding: 80px 0 100px 0;
-    background-color: var(--color-dark-s);
+    background-color: var(--color-light-l);
   }
 
 .carousel-container{
@@ -277,27 +277,42 @@ h1, h2, h3, h4, ul, p {
     gap:90px;
 }
 
+.carousel-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--color-light-s);
+}
+
+.carousel-card-btn{
+    margin-bottom: 30px;
+}
+
 .arrow{
     position: absolute;
     width: 60px;
     height: 60px;
     font-size: 0;
-    background-size: contain;
+    background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url(../../assets/img/icons/arrow-left.png);
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    background-color: var(--color-light-xl);
+    border: 2px solid var(--color-accent);
 }
 
 .arrow-left{
     left: 0;
-    /* background-image: url(/img/arrow-left.svg); */
 }
 
 .arrow-right{
     right: 0;
-    /* background-image: url(/img/arrow-left.svg); */
+    background-image: url(../../assets/img/icons/arrow-right.png);
+
 }
 
 /* HELP */
