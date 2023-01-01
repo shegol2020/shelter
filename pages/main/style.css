@@ -42,10 +42,10 @@ h1, h2, h3, h4, ul, p {
 }
 
 .heading-small{ /* header4 */
-    font-size: 22px;
+    font-size: 20px;
     line-height: 23px;
     font-weight: 400;
-    letter-spacing: 1.29px;
+    letter-spacing: 1px;
 
 }
 
@@ -77,7 +77,6 @@ h1, h2, h3, h4, ul, p {
     background-color: var(--color-accent);
     color: var(--color-dark-3xl);
     text-align: center;
-    text-decoration: none;
     border-radius: 100px;
     border: 2px solid var(--color-accent);
     font-size: 17px;
@@ -92,6 +91,11 @@ h1, h2, h3, h4, ul, p {
 
 .btn-accent{
     background-color: var(--color-light-xl);
+}
+
+.btn-link{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -267,7 +271,8 @@ h1, h2, h3, h4, ul, p {
 }
 
 .carousel-heading{
-    width: 400px;
+    text-align: center;
+    max-width: 400px;
 }
 
 .carousel-cards{
@@ -283,6 +288,11 @@ h1, h2, h3, h4, ul, p {
     align-items: center;
     gap: 30px;
     background-color: var(--color-light-s);
+}
+
+.carousel-card:hover{
+    background-color: var(--color-light-xl);
+
 }
 
 .carousel-card-btn{
@@ -322,23 +332,32 @@ h1, h2, h3, h4, ul, p {
 }
 
 .help-title{
-    border: 1px solid green;
+    margin: 0 auto;
+    max-width: 308px;
+    text-align: center;
 }
 
 .help-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
 }
 
 .help-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 65px 65px 0px 0px;
-    width: 150px;
-    height: 113px;
     border: 1px solid green;
 }
 
+.help-list-text{
+    padding-top: 35px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+}
 
 
 /* DONATION */
@@ -348,7 +367,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .donation-container{
-    padding: 70px 0 100px 0;
+    padding: 80px 0 100px 0;
     display: flex;
 }
 
@@ -357,7 +376,37 @@ h1, h2, h3, h4, ul, p {
 } */
 
 .donation-info{
-  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.donation-title{
+    max-width: 300px;
+}
+
+.donation-btn{
+    padding: 10px 15px;
+    width: 350px;
+    border-radius: 6px;
+}
+
+.donation-icon{
+    padding-right: 15px;
+}
+
+.donation-main-info{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.donation-add-info{
+    max-width: 380px;
+    color: var(--color-dark-m);
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
 }
 
 /* FOOTER */
