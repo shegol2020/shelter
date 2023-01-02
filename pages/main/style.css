@@ -363,19 +363,18 @@ h1, h2, h3, h4, ul, p {
 /* DONATION */
 
 .donation{
-    background-color: var(--color-dark-s);
+    background-color: var(--color-light-l);
 }
 
 .donation-container{
     padding: 80px 0 100px 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* .donation-pic{
-
-} */
-
 .donation-info{
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -386,9 +385,13 @@ h1, h2, h3, h4, ul, p {
 }
 
 .donation-btn{
-    padding: 10px 15px;
+    padding: 8px 13px;
     width: 350px;
-    border-radius: 6px;
+    border-radius: 10px;
+}
+
+.donation-btn-link{
+    display: flex;
 }
 
 .donation-icon{
@@ -423,25 +426,20 @@ h1, h2, h3, h4, ul, p {
 .footer-container{
     padding: 60px 0 60px 0;
     display: flex;
-    /* background-image: url(../../assets/img/footer-puppy.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom; */
-
 }
 
-.footer-contact-details{
-    padding: 57px 0 0 0;
+.footer-details{
+    padding: 43px 0 0 0;
 }
 
 .footer-location{
-   padding: 0 400px 0 170px;
+   padding-left: 160px;
 }
 
-.footer-location-details{
-    padding: 50px 0 0 0;
+.footer-title{
+    width: 278px;
+    color: var(--color-light-xl);
 }
-
 
 .footer-subtitle{
     display: flex;
@@ -451,7 +449,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .footer-subtitle:nth-child(2){
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .footer-subtitle::before{
