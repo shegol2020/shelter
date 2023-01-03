@@ -322,7 +322,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .carousel-cards-pets{
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
     gap: 39px;
 }
 
@@ -371,6 +371,11 @@ h1, h2, h3, h4, ul, p {
     right: 0;
     background-image: url(../../assets/img/icons/arrow-right.png);
 
+}
+
+.btn-pagination-group{
+    display: flex;
+    gap: 20px;
 }
 
 /* HELP */
