@@ -34,6 +34,15 @@ h1, h2, h3, h4, ul, p {
 
 }
 
+/* delete me later */
+.hidden{
+   display: none !important;
+}
+
+.test{
+    border: 1px solid green;
+}
+
 .heading-large{ /* header2 */
     font-size: 44px;
     line-height: 57px;
@@ -192,7 +201,7 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 767px) {
     .header-subtitle {
-        padding: 6px 0 0 0;
+        padding: 6px 0 0 5px;
     }
 
 }
@@ -278,7 +287,7 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 767px) {
     .about-container {
-        padding: 0 0 10px 0;
+        padding: 22px 0 0 0;
     }
 
 }
@@ -319,11 +328,12 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 767px) {
     .about-title {
-        width: 100%;
-        font-size: 28px;
+        width: 70%;
+        font-size: 26px;
         text-align: center;
-        padding: 0;
         line-height: 38px;
+        padding: 0 0 0 47px;
+        letter-spacing: 1px;
     }
 
 }
@@ -390,7 +400,8 @@ h1, h2, h3, h4, ul, p {
 @media (max-width: 767px) {
     .about-pic {
         width: 83%;
-        padding: 102px 0 0 43px;
+        padding: 96px 0 0 43px;
+        transform: scale(1);
     }
 
 }
@@ -441,12 +452,27 @@ h1, h2, h3, h4, ul, p {
 
 }
 
+@media (max-width: 767px) {
+    .intro-info{
+        padding-top: 30px;
+        width: 84%;
+    }
+
+}
+
 .intro-text{
     padding-top: 25px;
     color: var(--color-dark-xl);
     font-family: 'Arial', sans-serif;
     font-size: 15px;
     line-height: 24px;
+}
+
+@media (max-width: 767px) {
+    .intro-text {
+        letter-spacing: 0.8px;
+    }
+
 }
 
 .intro-heading{
@@ -460,8 +486,14 @@ h1, h2, h3, h4, ul, p {
 
 }
 
-.test{
-    border: 1px solid green;
+@media (max-width: 767px) {
+    .intro-heading {
+        width: 280px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 39px;
+    }
+
 }
 
 /* CAROUSEL */
