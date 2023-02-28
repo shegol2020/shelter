@@ -144,6 +144,13 @@ h1, h2, h3, h4, ul, p {
 
 }
 
+@media (max-width: 767px) {
+    .header-wrap {
+        padding: 30px 22px 37px 9px;
+    }
+
+}
+
 .header-wrap-light{
     padding: 30px 50px;
     background: var(--color-light-xl);
@@ -181,6 +188,13 @@ h1, h2, h3, h4, ul, p {
     .header-subtitle {
         padding: 6px 0 0 8px;
     }
+}
+
+@media (max-width: 767px) {
+    .header-subtitle {
+        padding: 6px 0 0 0;
+    }
+
 }
 
 .header-subtitle-light{
@@ -256,11 +270,19 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 1279px) {
     .about-container{
-        padding: 0 40px 21px 40px;
+        padding: 0 40px 24px 40px;
         flex-direction: column;
     }
 
 }
+
+@media (max-width: 767px) {
+    .about-container {
+        padding: 0 0 10px 0;
+    }
+
+}
+
 
 
 .about-info {
@@ -276,6 +298,13 @@ h1, h2, h3, h4, ul, p {
 
     }
 
+@media (max-width: 767px) {
+    .about-info {
+        padding: 0;
+    }
+
+}
+
 .about-title {
     color: var(--color-light-xl);
     width: 70%;
@@ -288,6 +317,16 @@ h1, h2, h3, h4, ul, p {
 
     }
 
+@media (max-width: 767px) {
+    .about-title {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 0;
+        line-height: 38px;
+    }
+
+}
 
 .about-text {
     padding-top: 45px;
@@ -305,6 +344,17 @@ h1, h2, h3, h4, ul, p {
 
 }
 
+@media (max-width: 767px) {
+    .about-text {
+        padding-top: 35px;
+        padding-left: 8px;
+        text-align: center;
+        width: 300px;
+    }
+
+}
+
+
 .about-btn{
     margin: 35px 0 0 0;
 }
@@ -315,6 +365,14 @@ h1, h2, h3, h4, ul, p {
         }
 
     }
+
+@media (max-width: 767px) {
+    .about-btn {
+        margin: 43px 0 0 54px;
+        padding: 13px 0;
+    }
+
+}
 
 .about-pic{
     padding: 0 0 0 42px;
@@ -329,6 +387,14 @@ h1, h2, h3, h4, ul, p {
 
     }
 
+@media (max-width: 767px) {
+    .about-pic {
+        width: 83%;
+        padding: 102px 0 0 43px;
+    }
+
+}
+
 /* INTRO */
 
 .intro-container {
@@ -341,6 +407,13 @@ h1, h2, h3, h4, ul, p {
         padding: 0px 180px 100px 175px;
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .intro-container {
+        padding: 0;
     }
 
 }
