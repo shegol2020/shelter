@@ -52,9 +52,9 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 767px) {
     .heading-large {
-        font-size: 26px;
+        font-size: 28px;
         text-align: center;
-        line-height: 38px;
+        line-height: 35px;
     }
 
 }
@@ -82,6 +82,12 @@ h1, h2, h3, h4, ul, p {
     font-weight: 400;
     letter-spacing: 1px;
 
+}
+
+@media (max-width: 767px) {
+    .heading-small {
+        font-size: 15px;
+    }
 }
 
 .heading-extra-small{ /* header5 */
@@ -306,7 +312,7 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 767px) {
     .about-container {
-        padding: 22px 0 0 0;
+        padding: 21px 0 0 0;
     }
 
 }
@@ -415,7 +421,7 @@ h1, h2, h3, h4, ul, p {
 @media (max-width: 767px) {
     .about-pic {
         width: 83%;
-        padding: 96px 0 0 43px;
+        padding: 103px 0 0 43px;
         transform: scale(1);
     }
 
@@ -460,7 +466,7 @@ h1, h2, h3, h4, ul, p {
     .intro-img {
         padding: 32px 0 0 0;
         width: 83%;
-
+    }
 }
 
 .intro-info {
@@ -607,9 +613,10 @@ h1, h2, h3, h4, ul, p {
 
 
 @media (max-width: 767px) {
-        .carousel-btn {
-            margin-top: 40px;
-        }
+    .carousel-btn {
+        margin-top: 40px;
+    }
+}
 
 .arrow{
     position: absolute;
@@ -635,7 +642,7 @@ h1, h2, h3, h4, ul, p {
         .arrow-left {
             left: 119px;
             bottom: 0;
-
+        }
     }
 
 .arrow-right{
@@ -649,12 +656,18 @@ h1, h2, h3, h4, ul, p {
         left: 250px;
         bottom: 0;
     }
-
+}
 /* HELP */
 
 .help{
-    padding: 80px 0 93px 0;
+    padding: 42px 0 93px 0;
 }
+
+@media (max-width: 767px) {
+            .help{
+                padding: 42px 0 43px 0;
+            }
+        }
 
 .help-title{
     margin: 0 auto;
@@ -662,8 +675,14 @@ h1, h2, h3, h4, ul, p {
     text-align: center;
 }
 
+        @media (max-width: 767px) {
+            .help-title{
+                max-width: 250px;
+            }
+        }
+
 .help-list{
-    padding-top: 60px;
+    padding: 60px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -676,10 +695,19 @@ h1, h2, h3, h4, ul, p {
     .help-list {
         margin: 0 auto;
         max-width: 630px;
-        padding-left: 70px;
+        padding: 60px 0 0 70px;
         justify-content: space-between;
         column-gap: 66px;
-        row-gap: 55px;
+    }
+}
+
+@media (max-width: 767px){
+    .help-list {
+        margin: 0 auto;
+        max-width: 290px;
+        padding: 30px 10px 0px 10px;
+        column-gap: 24px;
+        row-gap: 18px;
     }
 }
 
@@ -698,6 +726,13 @@ h1, h2, h3, h4, ul, p {
         }
     }
 
+@media (max-width: 1279px){
+    .help-list-item {
+        height: 100%;
+        width: 130px;
+    }
+}
+
 
 
 
@@ -708,6 +743,30 @@ h1, h2, h3, h4, ul, p {
     line-height: 113%;
     letter-spacing: 0.07rem;
 }
+
+@media (max-width: 767px){
+    .help-list-text {
+        padding-top: 18px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1279px){
+    .help-list-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px){
+    .help-list-img {
+        padding: 11px 0px 0 6px;
+    }
+}
+
+
+
 
 
 /* DONATION */
@@ -729,6 +788,12 @@ h1, h2, h3, h4, ul, p {
     }
 }
 
+@media (max-width: 767px) {
+    .donation-container {
+        padding: 40px 0 41px 0;
+    }
+}
+
 .donation-info{
   padding-left: 30px;
   display: flex;
@@ -736,14 +801,35 @@ h1, h2, h3, h4, ul, p {
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+    .donation-info {
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
 .donation-title{
     max-width: 300px;
+}
+
+@media (max-width: 767px) {
+    .donation-title {
+        max-width: 221px;
+    }
 }
 
 .donation-btn{
     padding: 8px 13px;
     width: 350px;
     border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .donation-btn {
+        margin: 5px 0 3px 0;
+        padding: 8px 10px;
+        width: 280px;
+    }
 }
 
 .donation-btn-link{
@@ -759,6 +845,12 @@ h1, h2, h3, h4, ul, p {
     line-height: 15px;
 }
 
+@media (max-width: 767px) {
+    .donation-main-info {
+        font-size: 15px;
+    }
+}
+
 .donation-add-info{
     max-width: 380px;
     color: var(--color-dark-m);
@@ -768,9 +860,23 @@ h1, h2, h3, h4, ul, p {
     font-style: italic;
 }
 
+@media (max-width: 767px) {
+    .donation-add-info {
+        max-width: 290px;
+        text-align: justify;
+    }
+}
+
 @media (max-width: 1279px){
     .donation-pic{
         padding: 59px 0 0 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .donation-pic {
+        width: 80%;
+        padding: 40px 0 0 0px;
     }
 }
 
