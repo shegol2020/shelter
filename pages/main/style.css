@@ -294,22 +294,26 @@ h1, h2, h3, h4, ul, p {
 
 /* burger */
 
-/*.nav-container {*/
-/*    display: block;*/
-/*    position: relative;*/
-/*    height: 60px;*/
-/*}*/
-
 .hamburger-lines {
-    height: 22px;
-    width: 30px;
+    height: 44px;
+    width: 59px;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    overflow: hidden;
+    top: 38px;
+    right: 41px;
     z-index: 2;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    background: none;
+    padding: 7px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .hamburger-lines {
+        display: flex;
+    }
 }
 
 .line {
@@ -330,14 +334,14 @@ h1, h2, h3, h4, ul, p {
 .hamburger-lines.active .line2{
     position: absolute;
     top: 50%;
-    left: -11px;
+    left: -19px;
     transform: translateY(-50%) rotate(90deg);
 }
 
 .hamburger-lines.active .line3{
     position: absolute;
     top: 50%;
-    left: 11px;
+    left: 19px;
     transform: translateY(-50%) rotate(90deg);
 }
 
