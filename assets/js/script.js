@@ -1,20 +1,24 @@
-//burger
+//Mobile menu
 
 let burgerIcon = document.querySelector(".hamburger-lines");
 let mobMenu = document.querySelector(".mobile-menu");
+let shadowEl = document.querySelector(".shadow");
 let bodyEl = document.body;
 
-burgerIcon.addEventListener("click", () =>{
+function toggleMobMenu() {
     burgerIcon.classList.toggle("active");
     mobMenu.classList.toggle("mobile-menu-active");
     bodyEl.classList.toggle("stop-scrolling");
-    //add shadow
-});
+    shadowEl.classList.toggle("shadow-active")
+}
+
+burgerIcon.addEventListener("click", toggleMobMenu);
 
 window.addEventListener('click', function(event) {
-    if (event.target.classList.contains('header-nav-item-link')) {
-        burgerIcon.classList.toggle("active");
-        mobMenu.classList.toggle("mobile-menu-active");
-        bodyEl.classList.toggle("stop-scrolling");
+    if (event.target.classList.contains('header-nav-item-link') || event.target.classList.contains('shadow')) {
+        toggleMobMenu();
     }
 });
+
+
+
