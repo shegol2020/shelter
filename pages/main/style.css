@@ -21,6 +21,10 @@ h1, h2, h3, h4, ul, p {
     padding: 0;
   }
 
+.hidden{
+    visibility: hidden;
+}
+
 .stop-scrolling{
     height: 100%;
     overflow: hidden;
@@ -177,18 +181,19 @@ h1, h2, h3, h4, ul, p {
 
 /* pop-up */
 
-/*.pop-up {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    background-color: rgba(130, 130, 130, 0.8);*/
-/*    z-index: 1000;*/
-/*}*/
+.pop-up { /* отображать при клике */
+    /*display: none;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(130, 130, 130, 0.8);
+    z-index: 1000;
+}
 
 .pop-up-content {
     position: relative;
@@ -197,6 +202,16 @@ h1, h2, h3, h4, ul, p {
     background-color: #ffffff;
     border-radius: 20px;
     z-index: 100;
+    width: 60%; /* надо пересчитать */
+}
+
+.pop-up-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: -45px -34px 50px 50px;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 /* header */
