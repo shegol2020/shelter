@@ -1,9 +1,9 @@
 //Mobile menu
 
-let burgerIcon = document.querySelector(".hamburger-lines");
-let mobMenu = document.querySelector(".mobile-menu");
-let shadowEl = document.querySelector(".shadow");
-let bodyEl = document.body;
+const burgerIcon = document.querySelector(".hamburger-lines");
+const mobMenu = document.querySelector(".mobile-menu");
+const shadowEl = document.querySelector(".shadow");
+const bodyEl = document.body;
 
 function toggleMobMenu() {
     burgerIcon.classList.toggle("active");
@@ -20,16 +20,49 @@ window.addEventListener('click', function(event) {
     }
 });
 
-//pop-up
+//burger accessibility
 
-const popupCloseBtn = document.querySelector(".pop-up-close");
-const popupContent = document.querySelector(".pop-up-content");
-const popupShadow = document.querySelector(".pop-up");
+const nav = document.querySelector(".mobile-menu-nav");
+const menu = document.querySelector(".mobile-nav-links");
 
-popupCloseBtn.addEventListener('click', () => {
-    popupContent.classList.add('hidden');
-    popupShadow.classList.add('hidden');
-    document.body.classList.remove('stop-scrolling');
+// Toggle menu open/closed.
+const toggleMenu = (status) => {
+    if (status === "false") {
+        menu.classList.remove("hide");
+        burgerIcon.setAttribute("aria-expanded", "true");
+        burgerIcon.setAttribute("aria-label", "Close news menu.");
+    } else {
+        menu.classList.add("hide");
+        burgerIcon.setAttribute("aria-expanded", "false");
+        burgerIcon.setAttribute("aria-label", "Open news menu.");
+    }
+};
+
+// Set initial state for the button.
+burgerIcon.setAttribute("aria-expanded", "false");
+burgerIcon.setAttribute("aria-label", "Open news menu.");
+
+// Listen for button click
+burgerIcon.addEventListener("click", function () {
+    const status = burgerIcon.getAttribute("aria-expanded");
+    toggleMenu(status);
 });
+
+// Close menu when user tabs outside the menu.
+document.addEventListener("focusin", (e) => {
+    if (e.target.closest("nav") !== nav) {
+        toggleMenu(true);
+    }
+});
+
+// Close menu when user clicks outside the menu.
+document.addEventListener("click", (e) => {
+    if (e.target.closest("nav") !== nav) {
+        toggleMenu(true);
+    }
+});
+
+
+
 
 

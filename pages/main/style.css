@@ -21,6 +21,17 @@ h1, h2, h3, h4, ul, p {
     padding: 0;
   }
 
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
 .hidden{
     visibility: hidden;
 }
@@ -1083,7 +1094,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .footer-container{
-    padding: 60px 0 60px 0;
+    padding: 60px 0 0 0;
     display: flex;
 }
 @media (max-width: 1279px){
@@ -1210,5 +1221,4 @@ h1, h2, h3, h4, ul, p {
                 width: 77%;
             }
         }
-
 
