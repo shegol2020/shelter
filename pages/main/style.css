@@ -741,6 +741,25 @@ h1, h2, h3, h4, ul, p {
     align-items: center;
 }
 
+.carousel-inner-wrap{
+    width: 800px; /* desktop */
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.carousel-list {
+    position: relative;
+    display: flex;
+    left: -1200px;
+}
+
+/*.carousel-block-list{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    list-style-type: none;*/
+/*    gap: 90px;*/
+/*}*/
+
 .carousel-heading{
     text-align: center;
     max-width: 400px;
@@ -754,12 +773,14 @@ h1, h2, h3, h4, ul, p {
     }
 
 .carousel-cards{
-    padding: 55px 100px 60px 100px;
+    /*padding: 55px 100px 60px 100px;*/
+    padding:5px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     list-style-type: none;
-    gap:90px;
+    /*gap:90px;*/
+    gap: 10px;
 }
 
 @media (max-width: 1279px) {
@@ -834,11 +855,11 @@ h1, h2, h3, h4, ul, p {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../../assets/img/icons/arrow-left.png);
-    border: none;
     border-radius: 50%;
     cursor: pointer;
     background-color: var(--color-light-xl);
     border: 2px solid var(--color-accent);
+    z-index: 10;
 }
 
 .arrow-left{
@@ -864,6 +885,20 @@ h1, h2, h3, h4, ul, p {
         bottom: -33px;
     }
 }
+
+@keyframes move-right{
+    from {left: -640px;}
+    to {left: 0}
+}
+
+.transition-right{
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+
+
+
+
 /* HELP */
 
 .help{

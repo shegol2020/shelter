@@ -1,4 +1,4 @@
-//Mobile menu
+/* Mobile menu */
 
 const burgerIcon = document.querySelector(".hamburger-lines");
 const mobMenu = document.querySelector(".mobile-menu");
@@ -63,6 +63,13 @@ document.addEventListener("click", (e) => {
 });
 
 
+/* Our pets carousel */
 
+const petsCarouselBtnRight = document.querySelector(".arrow-right");
+const carouselList = document.querySelector(".carousel-list");
+
+petsCarouselBtnRight.addEventListener("click", () => {
+    carouselList.classList.add("transition-right");
+});
 
 
