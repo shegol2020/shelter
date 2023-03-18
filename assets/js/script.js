@@ -66,10 +66,28 @@ document.addEventListener("click", (e) => {
 /* Our pets carousel */
 
 const petsCarouselBtnRight = document.querySelector(".arrow-right");
+const petsCarouselBtnLeft = document.querySelector(".arrow-left");
 const carouselList = document.querySelector(".carousel-list");
 
-petsCarouselBtnRight.addEventListener("click", () => {
+function moveRight() {
     carouselList.classList.add("transition-right");
-});
+    petsCarouselBtnRight.addEventListener("click", moveRight);
+}
 
+petsCarouselBtnRight.addEventListener("click", moveRight);
+
+function moveLeft() {
+    carouselList.classList.add("transition-left");
+    petsCarouselBtnLeft.addEventListener("click", moveLeft);
+}
+
+petsCarouselBtnLeft.addEventListener("click", moveLeft);
+
+carouselList.addEventListener("animationend", () => {
+    carouselList.classList.remove("transition-left");
+    carouselList.classList.remove("transition-right");
+    // petsCarouselBtnLeft.removeEventListener("click", moveLeft);
+    // petsCarouselBtnRight.removeEventListener("click", moveRight);
+
+});
 

@@ -742,15 +742,16 @@ h1, h2, h3, h4, ul, p {
 }
 
 .carousel-inner-wrap{
-    width: 800px; /* desktop */
+    padding-top: 50px;
+    width: 1050px; /* desktop */
     overflow: hidden;
-    margin: 0 20px;
 }
 
 .carousel-list {
     position: relative;
     display: flex;
-    left: -1200px;
+    left: -1055px;
+    gap: 90px;
 }
 
 /*.carousel-block-list{*/
@@ -773,14 +774,12 @@ h1, h2, h3, h4, ul, p {
     }
 
 .carousel-cards{
-    /*padding: 55px 100px 60px 100px;*/
-    padding:5px;
+    padding: 0px 0px 60px 0px;
     display: flex;
     justify-content: center;
-    /*flex-wrap: wrap;*/
     list-style-type: none;
-    /*gap:90px;*/
-    gap: 10px;
+    gap:90px;
+
 }
 
 @media (max-width: 1279px) {
@@ -859,11 +858,11 @@ h1, h2, h3, h4, ul, p {
     cursor: pointer;
     background-color: var(--color-light-xl);
     border: 2px solid var(--color-accent);
-    z-index: 10;
+    /*z-index: 10;*/
 }
 
 .arrow-left{
-    left: 0;
+    left: -79px;
 }
 
     @media (max-width: 767px) {
@@ -882,27 +881,38 @@ h1, h2, h3, h4, ul, p {
 @media (max-width: 767px) {
     .arrow-right {
         left: 180px;
-        bottom: -33px;
+        right: -70px;
     }
 }
 
-@keyframes move-right{
+@keyframes move-right {
     from {left: -640px;}
-    to {left: 0}
+    to {left: -1280px;}
 }
 
-.transition-right{
+.transition-right {
     animation-name: move-right;
     animation-duration: 5s;
 }
 
+@keyframes move-left {
+    from {left: -640px;}
+    to {left: 0px;}
+}
 
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 5s;
+}
 
+.carousel-btn{
+
+}
 
 /* HELP */
 
 .help{
-    padding: 42px 0 93px 0;
+    padding: 90px 0 93px 0;
 }
 
 @media (max-width: 767px) {
@@ -1018,7 +1028,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .donation-container{
-    padding: 80px 0 102px 0;
+    padding: 83px 0 102px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1129,7 +1139,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .footer-container{
-    padding: 60px 0 0 0;
+    padding: 59px 0 0 0;
     display: flex;
 }
 @media (max-width: 1279px){
@@ -1149,8 +1159,8 @@ h1, h2, h3, h4, ul, p {
 }
 
 .footer-details{
-    padding: 43px 0 0 0;
-    width: 284px;
+    padding: 37px 0 0 0;
+    width: 296px;
 }
 
 @media (max-width: 767px) {
@@ -1160,11 +1170,11 @@ h1, h2, h3, h4, ul, p {
 }
 
 .footer-details-location{
-    padding: 36px 0 0 0;
+    padding: 32px 0 0 0;
 }
 
 .footer-location{
-   padding-left: 150px;
+    padding-left: 141px;
 }
 
 @media (max-width: 1279px){
