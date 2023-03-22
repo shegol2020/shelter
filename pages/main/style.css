@@ -879,7 +879,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 @keyframes move-right {
-    from {left: -1090px;}
+    from {left: -1000px;}
     to {left: 0px;}
 }
 
@@ -889,7 +889,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 @keyframes move-left {
-    from {left: -1090px;}
+    from {left: -1000px;}
     to {left: -2159px;}
 }
 
