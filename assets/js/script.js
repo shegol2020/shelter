@@ -90,21 +90,41 @@
 
         petsCarouselBtnLeft.addEventListener("click", moveLeft);
 
+        let count = 0;
+
         carouselList.addEventListener("animationend", (animationEvent) => {
             let changedItem;
             if (animationEvent.animationName === "move-right"){
+                if (count > 1) {
+                    removeAllChildNodes(carouselList);
+                    generatePetCards(3);
+                    count = 0;
+                }
                 changedItem = cardsCenter.cloneNode(true);
                 cardsCenter.innerHTML = cardsLeft.innerHTML;
                 cardsLeft.innerHTML = changedItem.innerHTML;
+                count++;
+
+                console.log(count);
+
+
             }
             if (animationEvent.animationName === "move-left"){
+                if (count < -1) {
+                    removeAllChildNodes(carouselList);
+                    generatePetCards(3);
+                    count = 0;
+                }
                 changedItem = cardsCenter.cloneNode(true);
                 cardsCenter.innerHTML = cardsRight.innerHTML;
                 cardsRight.innerHTML = changedItem.innerHTML;
+                count--;
 
+
+                console.log(count);
             }
 
-            // changedItem.innerHTML = "";
+
             carouselList.classList.remove("transition-left");
             carouselList.classList.remove("transition-right");
 
@@ -117,6 +137,12 @@
 
     });
 
+
+function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
 
 
 
