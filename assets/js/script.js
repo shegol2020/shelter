@@ -295,6 +295,20 @@ function removeAllChildNodes(parent) {
 
     }
 
-    generatePetCards(3);
+    generatePetCards(3); //desktop
+
+
+    function generatePetPaginationArray(petArray, length, cardsOnPage) {
+        const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
+        const randomArr = randomNumArr.map(index => petArray[index]);
+        let resultArr = [];
+        let iterations = length/cardsOnPage;
+        for (let i=0; i<iterations+1; i++){
+            resultArr.push(randomArr);
+        }
+        return resultArr;
+    }
+
+    let testArr = generatePetPaginationArray(petsArray, 48, 8);
 
 
