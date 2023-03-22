@@ -743,23 +743,17 @@ h1, h2, h3, h4, ul, p {
 
 .carousel-inner-wrap{
     padding-top: 50px;
-    width: 1050px; /* desktop */
+    width: 1000px; /* desktop */
     overflow: hidden;
 }
 
 .carousel-list {
     position: relative;
     display: flex;
-    left: -1055px;
+    left: -1090px;
     gap: 90px;
 }
 
-/*.carousel-block-list{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    list-style-type: none;*/
-/*    gap: 90px;*/
-/*}*/
 
 .carousel-heading{
     text-align: center;
@@ -858,11 +852,10 @@ h1, h2, h3, h4, ul, p {
     cursor: pointer;
     background-color: var(--color-light-xl);
     border: 2px solid var(--color-accent);
-    /*z-index: 10;*/
 }
 
 .arrow-left{
-    left: -79px;
+    left: -116px;
 }
 
     @media (max-width: 767px) {
@@ -873,7 +866,7 @@ h1, h2, h3, h4, ul, p {
     }
 
 .arrow-right{
-    right: 0;
+    right: -110px;
     background-image: url(../../assets/img/icons/arrow-right.png);
 
 }
@@ -886,26 +879,27 @@ h1, h2, h3, h4, ul, p {
 }
 
 @keyframes move-right {
-    from {left: -640px;}
-    to {left: -1280px;}
+    from {left: -1090px;}
+    to {left: 0px;}
 }
 
 .transition-right {
     animation-name: move-right;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 @keyframes move-left {
-    from {left: -640px;}
-    to {left: 0px;}
+    from {left: -1090px;}
+    to {left: -2159px;}
 }
 
 .transition-left {
     animation-name: move-left;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 .carousel-btn{
+    padding: 15px 29px;
 
 }
 
