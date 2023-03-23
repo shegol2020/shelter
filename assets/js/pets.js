@@ -1,3 +1,6 @@
+import { generateRandomNum, renderCard, petsArray } from './petsgeneration.js'
+
+
 //pop-up
 
 const popupCloseBtn = document.querySelector(".pop-up-close");
@@ -70,17 +73,22 @@ paginGroup.addEventListener("click", (ev) => {
 });
 
 
+//import { generatePetCards, generateRandomNum, renderCard } from './petsgeneration.js'
 
+function generatePetPaginationArray(petArray, length, cardsOnPage) {
+    const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
+    const randomArr = randomNumArr.map(index => petArray[index]);
+    let resultArr = [];
+    let iterations = length/cardsOnPage;
+    for (let i=0; i<iterations+1; i++){
+        resultArr.push(randomArr);
+    }
+    return resultArr;
+}
 
-// function generatePetPaginationArray(petArray, length, cardsOnPage) {
-//     const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
-//     const randomArr = randomNumArr.map(index => petArray[index]);
-//     let resultArr = [];
-//     let iterations = length/cardsOnPage;
-//     for (let i=0; i<iterations+1; i++){
-//         resultArr.push(randomArr);
-//     }
-//     return resultArr;
-// }
+let testArr = generatePetPaginationArray(petsArray, 8, 8);
 
-// let testArr = generatePetPaginationArray(petsArray, 48, 8);
+const carouselWrapEl = document.querySelector(".carousel-wrap");
+
+renderCard(petsArray, "carousel-cards-pets", carouselWrapEl);
+

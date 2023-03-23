@@ -1,6 +1,6 @@
 //Pets generation
 
-let petsArray = [
+export const petsArray = [
     {
         "id": 0,
         "name": "Jennifer",
@@ -100,7 +100,7 @@ let petsArray = [
 ];
 
 
-const generateRandomNum = (count, max) => {
+export const generateRandomNum = (count, max) => {
     let newArr = [];
     while (newArr.length !== count) {
         const randomNum = Math.floor(Math.random() * max);
@@ -121,10 +121,10 @@ function getCardsArray(cardsArr, currentCard, length) {
 
 const carouselList = document.querySelector(".carousel-list");
 
-function renderCard(array, classString) {
+export function renderCard(array, classString, container) {
     const petsCardList = document.createElement("ul");
     petsCardList.classList.add("carousel-cards", classString);
-    carouselList.append(petsCardList);
+    container.append(petsCardList);
 
     array.forEach(petCard => {
         const petsCard = document.createElement("li");
@@ -138,16 +138,14 @@ function renderCard(array, classString) {
     })
 }
 
-// renderCard(petsArray, test);
-
 
 export function generatePetCards(length) {
     const leftCards = getCardsArray(petsArray, [], length);
-    renderCard(leftCards, "cards-left");
+    renderCard(leftCards, "cards-left", carouselList);
     const centerCards = getCardsArray(petsArray, leftCards, length);
-    renderCard(centerCards, "cards-center");
+    renderCard(centerCards, "cards-center", carouselList);
     const rightCards = getCardsArray(petsArray, centerCards, length);
-    renderCard(rightCards, "cards-right");
+    renderCard(rightCards, "cards-right", carouselList);
 
 }
 
