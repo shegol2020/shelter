@@ -794,6 +794,8 @@ h1, h2, h3, h4, ul, p {
 .carousel-cards-pets{
     padding: 40px 0;
     gap: 39px;
+    flex-wrap: wrap;
+
 }
 
 .carousel-card{

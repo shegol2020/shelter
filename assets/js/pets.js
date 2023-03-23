@@ -72,27 +72,15 @@ paginGroup.addEventListener("click", (ev) => {
 
 
 
-
-
-// const btnRight = document.querySelector("#btn-right");
-// const carousel = document.querySelector("#carousel");
-//
-// function moveLeft() {
-//     carousel.classList.add("transition-right");
-//     btnRight.removeEventListener("click", moveLeft);
-//     //disabled btn?
-// }
-//
-// btnRight.addEventListener("click", moveLeft);
-//
-//
-// carousel.addEventListener("animationend", (ev) => {
-//     const itemLeft = document.querySelector("#item-left");
-//     const itemActive = document.querySelector("#item-active");
-//
-//     if (ev.animationName === "move-right"){
-//         itemActive.innerHTML = itemLeft.innerHTML;
+// function generatePetPaginationArray(petArray, length, cardsOnPage) {
+//     const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
+//     const randomArr = randomNumArr.map(index => petArray[index]);
+//     let resultArr = [];
+//     let iterations = length/cardsOnPage;
+//     for (let i=0; i<iterations+1; i++){
+//         resultArr.push(randomArr);
 //     }
-//     carousel.classList.remove("transition-right");
-//     btnRight.addEventListener("click", moveLeft);
-// })
+//     return resultArr;
+// }
+
+// let testArr = generatePetPaginationArray(petsArray, 48, 8);
