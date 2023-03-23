@@ -76,19 +76,25 @@ paginGroup.addEventListener("click", (ev) => {
 //import { generatePetCards, generateRandomNum, renderCard } from './petsgeneration.js'
 
 function generatePetPaginationArray(petArray, length, cardsOnPage) {
-    const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
-    const randomArr = randomNumArr.map(index => petArray[index]);
     let resultArr = [];
-    let iterations = length/cardsOnPage;
-    for (let i=0; i<iterations+1; i++){
-        resultArr.push(randomArr);
+    let iterations = Math.ceil(length/cardsOnPage);
+    for (let i=0; i<iterations; i++){
+        const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
+        const randomArr = randomNumArr.map(index => petArray[index]);
+        resultArr.push(...randomArr);
     }
+
     return resultArr;
 }
 
-let testArr = generatePetPaginationArray(petsArray, 8, 8);
+let testArr = generatePetPaginationArray(petsArray, 24, 8);
+let testArr2 = generatePetPaginationArray(petsArray, 24, 8);
 
 const carouselWrapEl = document.querySelector(".carousel-wrap");
+const carouselList = document.querySelector(".carousel-list");
 
-renderCard(petsArray, "carousel-cards-pets", carouselWrapEl);
 
+renderCard(testArr, "carousel-cards-pagination", carouselList);
+renderCard(testArr2, "carousel-cards-pagination", carouselList);
+
+console.log(testArr);

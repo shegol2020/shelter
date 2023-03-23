@@ -747,11 +747,22 @@ h1, h2, h3, h4, ul, p {
     overflow: hidden;
 }
 
+.carousel-inner-wrap-pagination{
+    width: 1200px; /* desktop */
+    height: 1000px;
+}
+
 .carousel-list {
     position: relative;
     display: flex;
     left: -1090px;
     gap: 90px;
+}
+
+.carousel-list-pagination{
+    flex-wrap: wrap;
+    left: 0;
+    gap: 30px;
 }
 
 
@@ -774,6 +785,13 @@ h1, h2, h3, h4, ul, p {
     list-style-type: none;
     gap:90px;
 
+}
+
+.carousel-cards-pagination{
+    position: relative;
+    flex-wrap: nowrap;
+    padding: 0;
+    gap: 30px;
 }
 
 @media (max-width: 1279px) {
