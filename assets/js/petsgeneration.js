@@ -129,6 +129,7 @@ export function renderCard(array, classString, container) {
     array.forEach(petCard => {
         const petsCard = document.createElement("li");
         petsCard.classList.add("carousel-card");
+        petsCard.setAttribute("data-id", petCard.id)
         petsCard.innerHTML = `
                                 <img src=${petCard.img} alt="${petCard.breed}" class="carousel-card-pic">
                                 <h4 class="carousel-card-heading heading-small">${petCard.name}</h4>
