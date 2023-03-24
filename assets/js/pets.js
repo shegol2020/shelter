@@ -73,28 +73,36 @@ paginGroup.addEventListener("click", (ev) => {
 });
 
 
-//import { generatePetCards, generateRandomNum, renderCard } from './petsgeneration.js'
-
-function generatePetPaginationArray(petArray, length, cardsOnPage) {
+function generatePetPaginationArrays(petArray, length) {
     let resultArr = [];
-    let iterations = Math.ceil(length/cardsOnPage);
-    for (let i=0; i<iterations; i++){
-        const randomNumArr = generateRandomNum(cardsOnPage, cardsOnPage);
-        const randomArr = randomNumArr.map(index => petArray[index]);
-        resultArr.push(...randomArr);
+    for (let i=0; i<length; i++){
+        const randomNumArr = generateRandomNum(length, length);
+        resultArr = randomNumArr.map(index => petArray[index]);
     }
-
     return resultArr;
 }
 
-let testArr = generatePetPaginationArray(petsArray, 24, 8);
-let testArr2 = generatePetPaginationArray(petsArray, 24, 8);
 
-const carouselWrapEl = document.querySelector(".carousel-wrap");
-const carouselList = document.querySelector(".carousel-list");
+function joinPetPaginationArrays(petsPerPage, pages) {
+    let metaPetArr = [];
+    for (let i=0; i<pages; i++) {
+        const arr = generatePetPaginationArrays(petsArray, petsPerPage);
+        metaPetArr.push(arr);
+    }
+    return metaPetArr;
+}
+
+function renderPetPaginationArray(petsPerPage, pages) {
+
+    const carouselList = document.querySelector(".carousel-list");
+    const metaArr = joinPetPaginationArrays(petsPerPage, pages);
+    metaArr.forEach(arr => {
+        renderCard(arr, "carousel-cards-pagination", carouselList);
+    })
+}
 
 
-renderCard(testArr, "carousel-cards-pagination", carouselList);
-renderCard(testArr2, "carousel-cards-pagination", carouselList);
+renderPetPaginationArray(6, 8);
 
-console.log(testArr);
+
+
