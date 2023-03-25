@@ -222,8 +222,66 @@ h1, h2, h3, h4, ul, p {
     top: 0;
     margin: -45px -34px 50px 50px;
     padding: 20px;
-    border-radius: 50%;
+
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--color-accent);
+    border-radius: 100%;
+    background: transparent;
 }
+
+.pop-up-card{
+    width: 900px;
+    height: 500px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .pop-up-card {
+        width: 240px;
+        height: 341px;
+        column-gap: 10px;
+    }
+}
+
+.pop-up-img-wrap{
+    width: 55%;
+}
+
+.pop-up-info{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 40px;
+    padding: 50px 15px 0 0;
+}
+
+@media (max-width: 767px) {
+    .pop-up-info {
+        width: 42%;
+        row-gap: 18px;
+        padding: 10px 0 0 0;
+    }
+}
+
+.pop-up-header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.pop-up-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
 
 /* header */
 
