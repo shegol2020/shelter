@@ -1,5 +1,15 @@
 import {petsArray} from "./petsgeneration.js";
 
+const popupCloseBtn = document.querySelector(".pop-up-close");
+const popupContent = document.querySelector(".pop-up-content");
+const popupShadow = document.querySelector(".pop-up");
+
+popupCloseBtn.addEventListener('click', () => {
+    popupContent.classList.add('hidden');
+    popupShadow.classList.add('hidden');
+    document.body.classList.remove('stop-scrolling');
+});
+
 const popUpElement = document.querySelector(".pop-up");
 
 window.addEventListener('click', function(event) {

@@ -36,6 +36,10 @@ h1, h2, h3, h4, ul, p {
     visibility: hidden;
 }
 
+.display-none{
+    display: none !important
+}
+
 .stop-scrolling{
     height: 100%;
     overflow: hidden;
@@ -807,7 +811,7 @@ h1, h2, h3, h4, ul, p {
 
 .carousel-inner-wrap-pagination{
     width: 1200px; /* desktop */
-    height: 1000px;
+    height: 930px;
 }
 
 .carousel-list {
@@ -818,9 +822,8 @@ h1, h2, h3, h4, ul, p {
 }
 
 .carousel-list-pagination{
-    flex-wrap: nowrap;
-    width: 9200px;
-    left: 0;
+    width: 1000px;
+    left: 100px;
     gap: 30px;
 }
 
