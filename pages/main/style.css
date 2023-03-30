@@ -822,8 +822,8 @@ h1, h2, h3, h4, ul, p {
 }
 
 .carousel-list-pagination{
-    width: 1000px;
-    left: 100px;
+    width: 1180px;
+    left: 0;
     gap: 30px;
 }
 
