@@ -814,6 +814,20 @@ h1, h2, h3, h4, ul, p {
     height: 930px;
 }
 
+@media (max-width: 1279px) {
+    .carousel-inner-wrap-pagination{
+        width: 640px;
+        height: 1410px;
+   }
+}
+
+/*@media (max-width: 767px) {*/
+/*    .carousel-inner-wrap-pagination{*/
+/*        width: 870px; !* desktop *!*/
+/*    }*/
+
+/*}*/
+
 .carousel-list {
     position: relative;
     display: flex;
@@ -825,6 +839,12 @@ h1, h2, h3, h4, ul, p {
     width: 1180px;
     left: 0;
     gap: 30px;
+}
+
+@media (max-width: 1279px) {
+    .carousel-list-pagination {
+        width: 965px;
+    }
 }
 
 
