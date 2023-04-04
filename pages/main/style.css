@@ -196,8 +196,7 @@ h1, h2, h3, h4, ul, p {
 
 /* pop-up */
 
-.pop-up { /* отображать при клике */
-    /*display: none;*/
+.pop-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,11 +212,21 @@ h1, h2, h3, h4, ul, p {
 .pop-up-content {
     position: relative;
     display: flex;
-    padding: 40px;
     background-color: #ffffff;
-    border-radius: 20px;
     z-index: 100;
-    width: 60%; /* надо пересчитать */
+    width: 30%;
+}
+
+@media (max-width: 1279px) {
+    .pop-up-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .pop-up-content {
+        width: 90%;
+    }
 }
 
 .pop-up-close{
@@ -234,21 +243,25 @@ h1, h2, h3, h4, ul, p {
     background: transparent;
 }
 
+.pop-up-close:hover{
+    background: var(--color-accent);
+}
+
 .pop-up-card{
-    width: 900px;
-    height: 500px;
+    /* width: 900px;
+    height: 500px; */
     border-radius: 9px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     column-gap: 30px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 @media (max-width: 767px) {
     .pop-up-card {
-        width: 240px;
-        height: 341px;
+        width: 510px;
+        height: 340px;
         column-gap: 10px;
     }
 }
@@ -263,7 +276,7 @@ h1, h2, h3, h4, ul, p {
     flex-direction: column;
     justify-content: start;
     row-gap: 40px;
-    padding: 50px 15px 0 0;
+    padding: 10px;
 }
 
 @media (max-width: 767px) {
@@ -281,6 +294,7 @@ h1, h2, h3, h4, ul, p {
 }
 
 .pop-up-list{
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     row-gap: 4px;
@@ -805,28 +819,41 @@ h1, h2, h3, h4, ul, p {
 
 .carousel-inner-wrap{
     padding-top: 50px;
-    width: 1000px; /* desktop */
+    width: 1000px;
     overflow: hidden;
 }
 
+@media (max-width: 1279px) {
+    .carousel-inner-wrap{
+        width: 570px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner-wrap {
+        width: 320px;
+    }
+}
+
 .carousel-inner-wrap-pagination{
-    width: 1200px; /* desktop */
+    width: 1200px;
     height: 930px;
 }
 
 @media (max-width: 1279px) {
     .carousel-inner-wrap-pagination{
         width: 640px;
-        height: 1410px;
+        height: 1360px;
    }
 }
 
-/*@media (max-width: 767px) {*/
-/*    .carousel-inner-wrap-pagination{*/
-/*        width: 870px; !* desktop *!*/
-/*    }*/
+@media (max-width: 767px) {
+    .carousel-inner-wrap-pagination{
+        width: 320px;
+    }
 
-/*}*/
+}
 
 .carousel-list {
     position: relative;
@@ -834,6 +861,18 @@ h1, h2, h3, h4, ul, p {
     left: -1090px;
     gap: 90px;
 }
+
+    @media (max-width: 1279px) {
+        .carousel-list{
+            left: -1260px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .carousel-list {
+            left: -590px;
+        }
+    }
 
 .carousel-list-pagination{
     width: 1180px;
@@ -843,7 +882,13 @@ h1, h2, h3, h4, ul, p {
 
 @media (max-width: 1279px) {
     .carousel-list-pagination {
-        width: 965px;
+        width: 625px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-list-pagination {
+        width: 320px;
     }
 }
 
@@ -906,19 +951,6 @@ h1, h2, h3, h4, ul, p {
     background-color: var(--color-light-s);
 }
 
-@media (max-width: 1279px) {
-    .carousel-card:nth-child(3) {
-        display: none;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .carousel-card:nth-child(2) {
-        display: none;
-    }
-
-}
 
 .carousel-card:hover{
     background-color: var(--color-light-xl);
@@ -962,7 +994,7 @@ h1, h2, h3, h4, ul, p {
 
     @media (max-width: 767px) {
         .arrow-left {
-            left: 48px;
+            left: 88px;
             bottom: -33px;
         }
     }
@@ -976,7 +1008,8 @@ h1, h2, h3, h4, ul, p {
 @media (max-width: 767px) {
     .arrow-right {
         left: 180px;
-        right: -70px;
+        bottom: -33px;
+
     }
 }
 
@@ -1356,7 +1389,7 @@ h1, h2, h3, h4, ul, p {
     }
 }
 
-        @media (max-width: 767px) {
+@media (max-width: 767px) {
             .footer-img {
                 padding-top: 42px;
                 width: 77%;

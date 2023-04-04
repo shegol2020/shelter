@@ -27,17 +27,17 @@ function popUpRender(event) {
     popUpCard.innerHTML =  `<button class="pop-up-close">X</button>
 <div class="pop-up-card">
     <div class="pop-up-img-wrap">
-        <img src="../../assets/img/jennifer.png" alt="" class="pop-up-img"></div>
+        <img src=${petsArray[petNum].img} alt="" class="pop-up-img"></div>
         <div class="pop-up-info">
             <div class="pop-up-header">
                 <h2 class="pop-up-title heading-medium">${petsArray[petNum].name}</h2>
-                <h3 class="pop-up-subtitle heading-small">Dog - Labrador</h3></div>
-                <p class="pop-up-main-info heading-extra-small">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                <h3 class="pop-up-subtitle heading-small">${petsArray[petNum].type} - ${petsArray[petNum].breed}</h3></div>
+                <p class="pop-up-main-info heading-extra-small">${petsArray[petNum].description}</p>
                 <ul class="pop-up-list">
-                    <li class="pop-up-list-item">Age: 2 months</li>
-                    <li class="pop-up-list-item">Age: 2 months</li>
-                    <li class="pop-up-list-item">Age: 2 months</li>
-                    <li class="pop-up-list-item">Age: 2 months</li>
+                    <li class="pop-up-list-item">Age: ${petsArray[petNum].age}</li>
+                    <li class="pop-up-list-item">Inoculations: ${petsArray[petNum].inoculations}</li>
+                    <li class="pop-up-list-item">Diseases: ${petsArray[petNum].diseases}</li>
+                    <li class="pop-up-list-item">Parasites: ${petsArray[petNum].parasites}</li>
                 </ul>
             </div>
         </div>
