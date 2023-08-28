@@ -1,5 +1,7 @@
 # shelter
 
+Connecting hearts and paws: Your go-to online hub for adopting sheltered cats and dogs.
+
 This is task from EPAM UpSkill FrontEnd course. 
 - It consisits of two pages;
 - It has responsive layout for mobile, tablet and desktop;
@@ -11,3 +13,5 @@ Main page: https://shegol2020.github.io/shelter/pages/main/index.html
 Pets page: https://shegol2020.github.io/shelter/pages/main/pets.html
 
 ![image](https://user-images.githubusercontent.com/70282983/236533890-50eede46-8a31-460f-b2ff-57f1110c73f4.png)
+![image](https://github.com/shegol2020/shelter/assets/70282983/7ff39b65-319f-438c-8258-871e37743991)
+
