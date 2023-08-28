@@ -13,5 +13,6 @@ Main page: https://shegol2020.github.io/shelter/pages/main/index.html
 Pets page: https://shegol2020.github.io/shelter/pages/main/pets.html
 
 ![image](https://user-images.githubusercontent.com/70282983/236533890-50eede46-8a31-460f-b2ff-57f1110c73f4.png)
-![image](https://github.com/shegol2020/shelter/assets/70282983/7ff39b65-319f-438c-8258-871e37743991)
+![image](https://github.com/shegol2020/shelter/assets/70282983/b4c31b6d-fd2c-4a2e-9634-ff168f20af0a)
+
 
